@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panchang Data API System</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Panchang Data API Dashboard</h1>
+        <p class="subtitle">Filter and fetch specific calculations from your JSON database</p>
+        
+        <div class="filter-box">
+            <label for="panchang-date">Select Date:</label>
+            <input type="date" id="panchang-date" value="2026-05-17">
+            <button id="btn-fetch-panchang">Get Panchang Details</button>
+        </div>
+
+        <!-- Structured Display Table for Specific Parameters -->
+        <div class="result-card" id="panchang-card" style="display: none;">
+            <h3>Panchang Elements for <span id="display-date"></span></h3>
+            <table class="panchang-table">
+                <tr>
+                    <td><strong>Maas (માસ):</strong></td>
+                    <td id="val-maas">-</td>
+                    <td><strong>Tithi (તિથિ):</strong></td>
+                    <td id="val-tithi">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Vaar (વાર):</strong></td>
+                    <td id="val-vaar">-</td>
+                    <td><strong>Sunrise (સૂર્યોદય):</strong></td>
+                    <td id="val-sunrise">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Sunset (સૂર્યાસ્ત):</strong></td>
+                    <td id="val-sunset">-</td>
+                    <td><strong>Nakshatra (નક્ષત્ર):</strong></td>
+                    <td id="val-nakshatra">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Yog (યોગ):</strong></td>
+                    <td id="val-yog">-</td>
+                    <td><strong>Karan (કરણ):</strong></td>
+                    <td id="val-karan">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Chandra Rashi (ચંદ્ર રાશિ):</strong></td>
+                    <td id="val-chandra">-</td>
+                    <td><strong>Surya Rashi (સૂર્ય રાશિ):</strong></td>
+                    <td id="val-surya">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Guru Rashi (ગુરુ રાશિ):</strong></td>
+                    <td id="val-guru" colspan="3">-</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="response-container">
+            <h3>Raw API Output:</h3>
+            <pre id="api-output">Select a date and click the button to pull data from your API...</pre>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

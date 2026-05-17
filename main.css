@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #2c3e50;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #d35400;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+.filter-box {
+    background: #fff3e0;
+    border: 1px solid #ffe0b2;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+.result-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid #e67e22;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.result-card h3 {
+    margin-top: 0;
+    color: #d35400;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.panchang-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.panchang-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 15px;
+}
+
+.panchang-table td:nth-child(odd) {
+    color: #7f8c8d;
+    width: 25%;
+}
+
+.panchang-table td:nth-child(even) {
+    color: #2c3e50;
+    font-weight: 500;
+    width: 25%;
+}
+
+.response-container h3 {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+pre {
+    background: #2c3e50;
+    color: #efefef;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 13px;
+    max-height: 250px;
+}
